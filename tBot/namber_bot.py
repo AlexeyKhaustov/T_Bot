@@ -86,7 +86,7 @@ async def process_cancel_command(message: Message):
 
 # Этот хэндлер будет срабатывать на согласие пользователя сыграть в игру
 @dp.message(F.text.lower().in_(['да', 'давай', 'сыграем', 'игра',
-                                'играть', 'хочу играть']))
+                                'играть', 'хочу играть', 'играю']))
 async def process_positive_answer(message: Message):
     if not users[message.from_user.id]['in_game']:
         users[message.from_user.id]['in_game'] = True
