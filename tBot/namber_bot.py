@@ -34,7 +34,7 @@ async def process_start_command(message: Message):
         'Чтобы получить правила игры и список доступных '
         'команд - отправьте команду /help'
     )
-    # Если пользователь только запустил бота и его нет в словаре '
+    # Если пользователь только запустил бота и его нет в словаре
     # 'users - добавляем его в словарь
     if message.from_user.id not in users:
         users[message.from_user.id] = {
