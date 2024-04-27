@@ -105,7 +105,7 @@ async def process_positive_answer(message: Message):
 
 
 # Этот хэндлер будет срабатывать на отказ пользователя сыграть в игру
-@dp.message(F.text.lower().in_(['нет', 'не', 'не хочу', 'не буду']))
+@dp.message(F.text.lower().in_(['нет', 'не', 'не хочу', 'не буду', 'нехочу', 'небуду']))
 async def process_negative_answer(message: Message):
     if not users[message.from_user.id]['in_game']:
         await message.answer(
