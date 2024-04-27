@@ -114,8 +114,7 @@ async def process_negative_answer(message: Message):
         )
     else:
         await message.answer(
-            'Мы же сейчас с вами играем. Присылайте, '
-            'пожалуйста, числа от 1 до 100'
+            'Присылайте, пожалуйста, числа от 1 до 100'
         )
 
 
