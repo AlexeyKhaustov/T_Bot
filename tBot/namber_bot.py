@@ -5,7 +5,6 @@ from aiogram.filters import Command, CommandStart
 from aiogram.types import Message
 from token_bot import TOKEN_BOT
 
-# Вместо BOT TOKEN HERE нужно вставить токе
 # полученный у @BotFather
 BOT_TOKEN = TOKEN_BOT
 
