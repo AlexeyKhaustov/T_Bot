@@ -8,7 +8,7 @@ from token_bot import TOKEN_BOT
 # полученный у @BotFather
 BOT_TOKEN = TOKEN_BOT
 
-# Создаем объекты бота и дис
+# Создаем объекты бота и диспетчера
 bot = Bot(BOT_TOKEN)
 dp = Dispatcher()
 
